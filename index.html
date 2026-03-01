@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Accounting Hub | GST & Income Tax Experts</title>
+
+<meta name="description" content="Professional GST Filing, Income Tax Return, TDS & Company Registration Services. Book your consultation today.">
+<meta name="keywords" content="GST Filing, Income Tax, Accountant, Company Registration, TDS, Bookkeeping">
+<meta name="author" content="Accounting Hub">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:#f4f7fc;color:#333;}
+header{background:#0a2a66;color:white;padding:15px 60px;display:flex;justify-content:space-between;align-items:center;position:fixed;width:100%;top:0;z-index:1000;}
+nav a{color:white;text-decoration:none;margin-left:25px;transition:0.3s;}
+nav a:hover{color:#00d4a4;}
+.hero{height:100vh;background:linear-gradient(rgba(10,42,102,0.85),rgba(10,42,102,0.85)),url('https://images.unsplash.com/photo-1554224155-1696413565d3');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;padding:20px;}
+.hero h1{font-size:42px;margin-bottom:20px;}
+.hero p{margin-bottom:30px;}
+.btn{padding:14px 30px;background:#00b894;color:white;border:none;border-radius:6px;cursor:pointer;text-decoration:none;transition:0.3s;}
+.btn:hover{background:#019875;transform:scale(1.05);}
+.section{padding:100px 60px;text-align:center;}
+.section h2{color:#0a2a66;margin-bottom:40px;}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.card{background:white;padding:30px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.08);transition:0.4s;}
+.card:hover{transform:translateY(-10px);}
+.premium-booking{padding:100px 60px;background:linear-gradient(135deg,#0a2a66,#021539);display:flex;justify-content:center;}
+.booking-container{display:flex;flex-wrap:wrap;max-width:1100px;width:100%;background:rgba(255,255,255,0.08);backdrop-filter:blur(12px);border-radius:20px;padding:50px;box-shadow:0 15px 40px rgba(0,0,0,0.3);}
+.booking-left{flex:1;color:white;padding:20px;}
+.booking-right{flex:1;background:white;padding:40px;border-radius:15px;}
+.input-group{margin-bottom:20px;}
+.input-group input,.input-group select,.contact input,.contact textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;outline:none;}
+.premium-btn{width:100%;padding:14px;border:none;border-radius:8px;background:linear-gradient(45deg,#00b894,#019875);color:white;font-size:16px;cursor:pointer;transition:0.3s;}
+.premium-btn:hover{transform:scale(1.05);}
+.contact{background:#0a2a66;color:white;padding:80px 20px;text-align:center;}
+.contact form{max-width:400px;margin:auto;}
+.contact input,.contact textarea{margin:10px 0;border:none;}
+footer{background:#021539;color:white;text-align:center;padding:15px;}
+.call-btn{position:fixed;bottom:20px;right:20px;background:#28a745;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:600;}
+
+/* SUCCESS TOAST */
+.success{
+position:fixed;
+top:20px;
+right:-400px;
+background:#00b894;
+color:white;
+padding:15px 25px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+z-index:9999;
+display:flex;
+align-items:center;
+gap:10px;
+transition:0.5s ease;
+font-weight:500;
+}
+.success.show{right:20px;}
+.success svg{width:20px;height:20px;}
+
+/* LOADER */
+.loader-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:10000;
+display:none;
+}
+.loader{
+width:60px;
+height:60px;
+border:6px solid #e5e7eb;
+border-top:6px solid #00b894;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+@media(max-width:900px){
+header{flex-direction:column;padding:15px 20px;}
+.section{padding:80px 20px;}
+.booking-container{flex-direction:column;}
+.hero h1{font-size:28px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Accounting Hub</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#booking">Book Meeting</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Professional Accounting & Tax Solutions</h1>
+<p>GST | Income Tax | TDS | Company Registration | Bookkeeping</p>
+<a href="#booking" class="btn">Book Free Consultation</a>
+</section>
+
+<section class="section" id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">GST Registration & Return Filing</div>
+<div class="card">Income Tax Return Filing</div>
+<div class="card">TDS Filing & Compliance</div>
+<div class="card">Company Registration</div>
+<div class="card">MSME Registration</div>
+<div class="card">Bookkeeping & Financial Reports</div>
+</div>
+</section>
+
+<section id="booking" class="premium-booking">
+<div class="booking-container">
+<div class="booking-left">
+<h2>Book Your Consultation</h2>
+<p>Fast response. Professional service. 100% Confidential.</p>
+</div>
+
+<div class="booking-right">
+<form id="bookingForm" onsubmit="bookAppointment(event)">
+<div class="input-group"><input type="text" id="pname" placeholder="Full Name" required></div>
+<div class="input-group"><input type="email" id="pemail" placeholder="Email Address (Optional)"></div>
+<div class="input-group"><input type="tel" id="pphone" placeholder="Phone Number" required></div>
+<div class="input-group">
+<select id="pservice" required>
+<option value="">Select Service</option>
+<option>GST Filing</option>
+<option>Income Tax Return</option>
+<option>Company Registration</option>
+<option>Bookkeeping</option>
+<option>TDS Filing</option>
+<option>Other</option>
+</select>
+</div>
+<div class="input-group"><input type="date" id="pdate" required></div>
+<div class="input-group">
+<select id="pmeetingtype" required>
+<option value="">Meeting Type</option>
+<option>Office Visit</option>
+<option>Phone Call</option>
+<option>Video Meeting</option>
+</select>
+</div>
+<button class="premium-btn" type="submit">Confirm Appointment</button>
+</form>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<form id="contactForm" onsubmit="sendContact(event)">
+<input type="text" id="cname" placeholder="Your Name" required>
+<input type="email" id="cemail" placeholder="Your Email (Optional)">
+<input type="tel" id="cphone" placeholder="Phone Number" required>
+<textarea id="cmessage" rows="4" placeholder="Your Message" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>© 2026 Accounting Hub | All Rights Reserved</footer>
+<a href="tel:87439987" class="call-btn">📞 Call Us</a>
+
+<!-- LOADER -->
+<div class="loader-overlay" id="loader">
+<div class="loader"></div>
+</div>
+
+<script>
+(function(){ emailjs.init("_l2NJ8sKKCqUz1_RW");; })();
+
+function showLoader(){ document.getElementById("loader").style.display="flex"; }
+function hideLoader(){ document.getElementById("loader").style.display="none"; }
+
+function showSuccess(msg){
+let div=document.createElement("div");
+div.className="success";
+div.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17L4 12"/></svg><span>${msg}</span>`;
+document.body.appendChild(div);
+setTimeout(()=>{div.classList.add("show");},50);
+setTimeout(()=>{div.classList.remove("show");setTimeout(()=>{div.remove();},500);},4000);
+window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function bookAppointment(e){
+e.preventDefault();
+let btn=e.target.querySelector("button");
+btn.disabled=true;
+let original=btn.innerText;
+btn.innerText="Submitting...";
+showLoader();
+
+let params={
+firm_name:"Accounting Hub",
+name:pname.value,
+email:pemail.value||"Not Provided",
+phone:pphone.value,
+service_type:pservice.value,
+meeting_date:pdate.value,
+meeting_type:pmeetingtype.value
+};
+
+emailjs.send("service_90mdn9b","template_8ljrxhi",params)
+.then(()=>{
+hideLoader();
+showSuccess("Appointment booked successfully!");
+bookingForm.reset();
+btn.disabled=false;
+btn.innerText=original;
+})
+.catch(()=>{
+hideLoader();
+showSuccess("Something went wrong. Please try again.");
+btn.disabled=false;
+btn.innerText=original;
+});
+}
+
+function sendContact(e){
+e.preventDefault();
+let btn=e.target.querySelector("button");
+btn.disabled=true;
+let original=btn.innerText;
+btn.innerText="Submitting...";
+showLoader();
+
+let params={
+firm_name:"Accounting Hub",
+name:cname.value,
+email:cemail.value||"Not Provided",
+phone:cphone.value,
+message:cmessage.value
+};
+
+emailjs.send("service_90mdn9b","template_dsj5zz7",params)
+.then(()=>{
+hideLoader();
+showSuccess("Message sent successfully!");
+contactForm.reset();
+btn.disabled=false;
+btn.innerText=original;
+})
+.catch(()=>{
+hideLoader();
+showSuccess("Something went wrong. Please try again.");
+btn.disabled=false;
+btn.innerText=original;
+});
+}
+</script>
+
+</body>
+</html>
