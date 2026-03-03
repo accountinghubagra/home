@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-   <url>
-      <loc>https://accountinghubagra.github.io/home/</loc>
-      <lastmod>2026-03-03</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
-      <image:image>
-         <image:loc>https://images.unsplash.com/photo-1554224154-22dec7ec8818</image:loc>
-         <image:caption>Best Accountant in Agra, Best CA in Agra, Best CA Firm in Agra - Accounting Hub</image:caption>
-         <image:title>Best CA &amp; Best Accountant in Agra</image:title>
-      </image:image>
-   </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://accountinghubagra.github.io/home/</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://accountinghubagra.github.io/home/#services</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://accountinghubagra.github.io/home/#testimonials</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://accountinghubagra.github.io/home/#booking</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://accountinghubagra.github.io/home/#contact</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
